@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Cria uma tag <script> para incluir script2.js
     function setRouteJS(filepath) {
         var script = document.createElement('script');
-        script.src = '../js/' + filepath + '.js';
+        script.src = 'js/' + filepath + '.js';
         document.body.appendChild(script);
     }
 
