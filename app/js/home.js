@@ -36,8 +36,12 @@ sHTML.innerHTML = `
     <button type="button" class="btn btn-primary" onclick="checkHash(event)">Verificar</button>
 
     <div id="hash"></div>
-    <div id="resultado"></div>`;
+    <div id="resultado"></div>
+    <hr>
+    <div style="text-align:center;">
+    <strong>Veja como você pode apoiar este software, <a href="javascript:window.externo.rodar('https://mestredainfo.wordpress.com/apoie/');">clique aqui</a>
+    </div>`;
 
 var scriptJS = document.createElement('script');
-scriptJS.src = '../js/script.js';
+scriptJS.src = 'js/script.js';
 document.body.appendChild(scriptJS);
