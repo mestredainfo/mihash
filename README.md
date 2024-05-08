@@ -13,7 +13,7 @@ Para executar MIHash a partir do código-fonte, siga estas etapas:
 ## Links
 
 - [Página do MIHash](https://mestredainfo.wordpress.com/mihash/)
-- [Doe um café, faça um dev feliz](https://mestredainfo.wordpress.com/doacao/)
+- [Apoie](https://mestredainfo.wordpress.com/apoie/)
 
 ## Licença
 
