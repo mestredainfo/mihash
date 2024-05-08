@@ -38,7 +38,7 @@ sHTML.innerHTML = `
     <div id="hash"></div>
     <div id="resultado"></div>
     <hr>
-    <div style="text-align:center;">
+    <div style="text-align:center;margin-top:17px">
     <strong>Veja como você pode apoiar este software, <a href="javascript:window.externo.rodar('https://mestredainfo.wordpress.com/apoie/');">clique aqui</a>
     </div>`;
 
