@@ -23,4 +23,4 @@ O MIHash é fornecido sob:
 
 Estando sob os termos da GNU General Public License version 2 only.
 
-Todas as contribuições para o MIHash estão sujeitas a está licença.
+Todas as contribuições para o MIHash estão sujeitas a esta licença.
