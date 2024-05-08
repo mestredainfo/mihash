@@ -7,9 +7,9 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "electron .",
-        "package-darwin": "electron-forge package --platform darwin",
-        "package-win32": "electron-forge package --platform win32",
-        "package": "electron-forge package"
+        "make-darwin": "electron-forge make --platform darwin",
+        "make-win32": "electron-forge make --platform win32",
+        "make": "electron-forge make"
     },
     "author": {
         "name": "Murilo Gomes Julio",
