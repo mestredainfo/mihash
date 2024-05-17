@@ -1,13 +1,29 @@
+<?php
 // Copyright (C) 2004-2024 Murilo Gomes Julio
 // SPDX-License-Identifier: GPL-2.0-only
 
 // Organização: Mestre da Info
 // Site: https://linktr.ee/mestreinfo
 
-var sHTML = document.body;
-sHTML.innerHTML = `
-    <a href="index.html?p=sobre" target="_blank" rel="noopener" class="btn btn-primary">Sobre o MIHash</a> <a href="javascript:novaVersao();" class="btn btn-primary">Verificar Atualização</a>
-    <hr>
+header("Content-Security-Policy: default-src 'self'");
+header("Content-Security-Policy: script-src 'self' 'unsafe-inline' script.js");
+
+if (empty($_GET['c'])) {
+    include_once(dirname(__FILE__) . '/checkupdate.php');
+    checkupdate();
+}
+?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIHash</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
     <div class="form-control">
         <label for="txtTipoHash">Selecione o tipo de hash que deseja verificar</label>
         <select id="txtTipoHash">
@@ -35,13 +51,16 @@ sHTML.innerHTML = `
 
     <button type="button" class="btn btn-primary" onclick="checkHash(event)">Verificar</button>
 
-    <div id="hash"></div>
     <div id="resultado"></div>
-    <hr>
-    <div style="text-align:center;margin-top:17px">
-    <strong>Veja como você pode apoiar este software, <a href="javascript:window.externo.rodar('https://mestredainfo.wordpress.com/apoie/');">clique aqui</a>
-    </div>`;
 
-var scriptJS = document.createElement('script');
-scriptJS.src = 'js/script.js';
-document.body.appendChild(scriptJS);
+    <div style="text-align:center;margin-top:17px">
+        <strong>
+            Veja como você pode apoiar este software, <a href="javascript:window.externo.rodar('https://mestredainfo.wordpress.com/apoie/');">clique aqui</a>
+        </strong>
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/hash.js"></script>
+</body>
+
+</html>

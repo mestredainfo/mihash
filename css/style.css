@@ -1,3 +1,11 @@
+/* 
+ * Copyright (C) 2004-2024 Murilo Gomes Julio
+ * SPDX-License-Identifier: GPL-2.0-only
+ *
+ * Organização: Mestre da Info
+ * Site: https://linktr.ee/mestreinfo
+ */
+
 * {
     margin-top: 3px;
     margin-left: 3px;
@@ -5,7 +13,6 @@
     margin-bottom: 3px;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body {
@@ -80,33 +87,15 @@ body {
     /* Adiciona uma sombra de foco */
 }
 
-.btn-danger {
-    background-color: #990000;
-    /* Cor de fundo do botão */
-    color: #fff;
-    /* Cor do texto do botão */
-}
-
-/* Estilo de hover (quando o mouse passa por cima) */
-.btn-danger:hover {
-    background-color: #380000;
-    /* Cor de fundo alterada no hover */
-}
-
-.btn-danger:focus {
-    box-shadow: 0 0 5px rgba(87, 0, 0, 0.644);
-    /* Adiciona uma sombra de foco */
-}
-
 .alert {
     padding: 20px;
     margin-bottom: 15px;
 }
 
 .alert-info {
-    background-color: #007bff;
+    background-color: #70b5ff;
     /* Blue */
-    color: #FFFFFF;
+    color: #000000;
     font-size: 18px;
 }
 
@@ -125,8 +114,8 @@ body {
 }
 
 .alert-danger {
-    background-color: #f44336;
-    /* Red */
+    background-color: #ff747a;
+    /* Green */
     color: #000000;
     font-size: 18px;
 }
