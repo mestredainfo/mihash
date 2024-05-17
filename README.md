@@ -2,7 +2,7 @@
 
 O MIHash é uma ferramenta projetada para assegurar a integridade de arquivos baixados da Internet. Funciona verificando se o hash fornecido pelo desenvolvedor ou fornecedor coincide com o hash gerado localmente a partir do arquivo baixado. Isso proporciona uma camada adicional de segurança, garantindo que o arquivo não tenha sido corrompido durante o download ou alterado por terceiros.
 
-O MIHash agora é desenvolvido na linguagem PHP e usa o MIApp para rodar o software no desktop Linux.
+O MIHash é desenvolvido na linguagem PHP a partir da versão 2.0.0 e usa o MIApp para rodar o software no desktop Linux.
 
 ## Executando da Fonte
 
