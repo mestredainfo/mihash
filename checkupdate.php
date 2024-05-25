@@ -14,7 +14,7 @@ function checkUpdate($a = false)
         if ($a) {
             echo 'Verificando atualizações...';
         }
-        
+
         $url = 'https://mestredainfo.wordpress.com/mihash/';
 
         $versaoatual = file_get_contents(dirname(__FILE__) . '/version');
@@ -22,6 +22,8 @@ function checkUpdate($a = false)
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         $html = curl_exec($ch);

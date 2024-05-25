@@ -15,7 +15,7 @@ if ($sServer == 'POST') {
         $sHash = trim(filter_input(INPUT_POST, 'hash'));
         $sModo = filter_input(INPUT_POST, 'modo');
 
-        if (PHP_OS == 'LINUX') {
+        if (PHP_OS == 'Linux') {
             $cmd = $sTipo . 'sum "' . $sArquivo . '"';
         } else {
             $cmd = '"certUtil" "-hashfile" "' . addcslashes($sArquivo, '\\"') . '" ' . strtoupper($sTipo);
@@ -29,7 +29,7 @@ if ($sServer == 'POST') {
 
         flush();
 
-        if (PHP_OS == 'LINUX') {
+        if (PHP_OS == 'Linux') {
             $process = proc_open($cmd, $descriptorspec, $pipes, realpath('./'), array());
         } else {
             $process = proc_open($cmd, $descriptorspec, $pipes, null, null);
@@ -37,7 +37,7 @@ if ($sServer == 'POST') {
 
         if (is_resource($process)) {
             while ($s = fgets($pipes[1])) {
-                if (PHP_OS == 'LINUX') {
+                if (PHP_OS == 'Linux') {
                     $txtHash = strstr($s, ' ', true);
                 } else {
                     $txtHash .= str_replace(' ', '', $s) . ' ';
@@ -49,7 +49,7 @@ if ($sServer == 'POST') {
 
         proc_close($process);
 
-        if (PHP_OS !== 'LINUX') {
+        if (PHP_OS !== 'Linux') {
             $a = explode(' ', $txtHash);
             $txtHash = trim($a[1]);
         }

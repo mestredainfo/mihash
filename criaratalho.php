@@ -5,7 +5,7 @@
 // Organização: Mestre da Info
 // Site: https://linktr.ee/mestreinfo
 
-if (PHP_OS == 'LINUX') {
+if (PHP_OS == 'Linux') {
     $sFolder = '/home/' . get_current_user() . '/.local/share/applications/';
     if (file_exists($sFolder)) {
         $sDesktop = "[Desktop Entry]\n
