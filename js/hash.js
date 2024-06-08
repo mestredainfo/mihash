@@ -12,7 +12,7 @@
 const txtArquivo = document.getElementById('txtArquivo');
 
 txtArquivo.addEventListener('click', async () => {
-    txtArquivo.value = await window.arquivo.abrir()
+    txtArquivo.value = await window.miapp.openFile()
     if (txtArquivo.value == 'undefined') {
         txtArquivo.value = '';
     }
@@ -25,9 +25,11 @@ async function checkHash(e) {
     formData.append("hash", document.getElementById('txtHash').value);
     formData.append("modo", document.getElementById('txtVerificar').value);
 
-    document.getElementById('resultado').innerHTML = '<div class="alert alert-info">Verificando hash...</div>';
+    window.miapp.translate('Verificando hash...').then((result) => {
+        document.getElementById('resultado').innerHTML = '<div class="alert alert-info">' + result + '</div>';
+    });
 
-    await post('checkhash.php', formData, function (response) {
+    await post('/controls/checkhash.php', formData, function (response) {
         document.getElementById('resultado').innerHTML = response;
     });
 
@@ -36,7 +38,7 @@ async function checkHash(e) {
 
 // Salvar Arquivo
 async function SalvarArquivo() {
-    var txtArquivo = await window.arquivo.salvar()
+    var txtArquivo = await window.miapp.saveFile()
     if (txtArquivo) {
         let formData = new FormData();
         formData.append("arquivo", txtArquivo);
@@ -44,9 +46,12 @@ async function SalvarArquivo() {
         formData.append("tipo", document.getElementById('txtTipoHash').value);
         formData.append("hash", document.getElementById('txtSalvarHash').value);
 
-        document.getElementById('resultado').innerHTML = '<div class="alert alert-info">Salvando hash...</div>';
+        window.miapp.translate('Salvando hash...').then((result) => {
+            document.getElementById('resultado').innerHTML = '<div class="alert alert-info">' + result + '</div>';
+        });
+       
 
-        await post('savehash.php', formData, function (response) {
+        await post('/controls/savehash.php', formData, function (response) {
             document.getElementById('resultado').innerHTML = response;
         });
     }
