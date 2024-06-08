@@ -1,21 +1,26 @@
 {
     "Sobre":
     {
-        "Criar Atalho": {
-            "page": "criaratalho.php"
-        },
         "Documentação": {
             "url": "https://mestredainfo.wordpress.com/category/mihash/",
             "key": "F1"
         },
         "Verificar Atualização": {
-            "page": "checkupdate.php?a=1",
-            "newwindow": true
+            "page": "micheckupdate.php",
+            "newwindow": true,
+            "width": 400,
+            "height": 200,
+            "resizable": false,
+            "menu": false
         },
         "separator": {},
         "Sobre o MIHash": {
             "page": "sobre.php",
-            "newwindow": true
+            "newwindow": true,
+            "width": 800,
+            "height": 600,
+            "resizable": false,
+            "menu": false
         }
     }
 }
