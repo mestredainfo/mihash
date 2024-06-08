@@ -3,6 +3,7 @@
 		"name": "MIHash",
 		"description": "Verifica e gera hash de arquivos no Linux e Windows.",
 		"version": "2.0.2",
+		"categories": "Utility;",
 		"width": 800,
 		"height": 600,
 		"resizable": false,
