@@ -14,21 +14,16 @@ header("Content-Security-Policy: script-src 'self' 'unsafe-inline' script.js");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre o MIHash</title>
+    <title><?php echo miTranslate('Sobre o MIHash'); ?></title>
+
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <h1>Sobre</h1>
+    <?php echo miAboutApp('', true); ?>
 
-    Desenvolvido por: Murilo Gomes Julio<br>
-    Organização: Mestre da Info<br>
-    Site: <a href="javascript:window.externo.rodar('https://mestredainfo.wordpress.com');">mestredainfo.wordpress.com</a><br><br>
-
-    Copyright &copy; 2004-2024 Murilo Gomes Julio<br><br>
-
-    Licença: GPL-2.0-only
-
+    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 
