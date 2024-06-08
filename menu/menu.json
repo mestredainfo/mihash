@@ -1,6 +1,15 @@
 {
     "Sobre":
     {
+        "Criar Atalho": {
+            "page": "micreateshortcut.php",
+            "newwindow": true,
+            "width": 0,
+            "height": 0,
+            "resizable": false,
+            "menu": false,
+            "hide": true
+        },
         "Documentação": {
             "url": "https://mestredainfo.wordpress.com/category/mihash/",
             "key": "F1"
