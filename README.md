@@ -1,23 +1,19 @@
 # MIHash
 
-O MIHash é uma ferramenta projetada para assegurar a integridade de arquivos baixados da Internet. Funciona verificando se o hash fornecido pelo desenvolvedor ou fornecedor coincide com o hash gerado localmente a partir do arquivo baixado. Isso proporciona uma camada adicional de segurança, garantindo que o arquivo não tenha sido corrompido durante o download ou alterado por terceiros.
+O MIHash é um software desenvolvido para assegurar a integridade de arquivos baixados da Internet. Funciona verificando se o hash fornecido pelo desenvolvedor ou fornecedor do arquivo coincide com o hash gerado localmente a partir do arquivo baixado. Isso proporciona uma camada adicional de segurança, garantindo que o arquivo não tenha sido corrompido durante o download ou alterado por terceiros.
 
-O MIHash é desenvolvido na linguagem PHP a partir da versão 2.0.0 e usa o MIApp para rodar o software no desktop Linux e Windows.
+## Requerimento
 
-## Executando da Fonte
+- Sistema Operacional: Linux Debian 12 ou superior, Linux Ubuntu 22.04 ou superior, Windows 10 ou superior
+- Arquitetura: x64
+- MIApp 4 ou superior
 
-Para executar MIHash a partir do código-fonte é necessário baixar o MIApp, siga estas etapas:
-
-- Baixe o [MIApp](https://mestredainfo.wordpress.com/miapp/)
-- Extraia o arquivo zip
-- Exclua os arquivos da pasta app do MIApp
-- Copie os arquivos do MIHash para a pasta app
-- Execute o MIApp
+Para baixar e instalar o MIApp acesse o site oficial do [Mestre da Info](https://mestredainfo.wordpress.com/miapp/).
 
 ## Links
 
 - [Página do MIHash](https://mestredainfo.wordpress.com/mihash/)
-- [Apoie](https://mestredainfo.wordpress.com/apoie/)
+- [Apoie](https://mestredainfo.wordpress.com/assinantes/)
 
 ## Licença
 
