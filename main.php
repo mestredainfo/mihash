@@ -4,9 +4,6 @@
 
 // Organização: Mestre da Info
 // Site: https://linktr.ee/mestreinfo
-
-header("Content-Security-Policy: default-src 'self'");
-header("Content-Security-Policy: script-src 'self' 'unsafe-inline' script.js");
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -15,13 +12,12 @@ header("Content-Security-Policy: script-src 'self' 'unsafe-inline' script.js");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIHash</title>
-    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <div class="mb-3">
-        <label for="txtTipoHash"><?php echo call_user_func('miTranslate', 'Selecione o tipo de hash que deseja verificar'); ?></label>
+        <label for="txtTipoHash"><?php echo miTranslate('Selecione o tipo de hash que deseja verificar'); ?></label>
         <select id="txtTipoHash" class="form-control">
             <option value="md5">MD5</option>
             <option value="sha1">SHA1</option>
@@ -30,32 +26,31 @@ header("Content-Security-Policy: script-src 'self' 'unsafe-inline' script.js");
         </select>
     </div>
     <div class="mb-3">
-        <label for="txtArquivo"><?php echo call_user_func('miTranslate', 'Selecione o arquivo que deseja verificar o hash'); ?></label>
+        <label for="txtArquivo"><?php echo miTranslate('Selecione o arquivo que deseja verificar o hash'); ?></label>
         <input id="txtArquivo" type="text" class="form-control" readonly>
     </div>
     <div class="mb-3">
-        <label for="txtHash"><?php echo call_user_func('miTranslate', 'Digite/Cole o hash informado pelo desenvolvedor'); ?></label>
+        <label for="txtHash"><?php echo miTranslate('Digite/Cole o hash informado pelo desenvolvedor'); ?></label>
         <input id="txtHash" type="text" class="form-control">
     </div>
     <div class="mb-3">
-        <label for="txtVerificar"><?php echo call_user_func('miTranslate', 'Modo'); ?></label>
+        <label for="txtVerificar"><?php echo miTranslate('Modo'); ?></label>
         <select id="txtVerificar" class="form-control">
-            <option value="verificar"><?php echo call_user_func('miTranslate', 'Verificar hash'); ?></option>
-            <option value="gerar"><?php echo call_user_func('miTranslate', 'Gerar apenas o hash do arquivo'); ?></option>
+            <option value="verificar"><?php echo miTranslate('Verificar hash'); ?></option>
+            <option value="gerar"><?php echo miTranslate('Gerar apenas o hash do arquivo'); ?></option>
         </select>
     </div>
 
-    <button type="button" class="btn btn-primary" onclick="checkHash(event)"><?php echo call_user_func('miTranslate', 'Verificar'); ?></button>
+    <button type="button" class="btn btn-primary" onclick="checkHash(event)"><?php echo miTranslate('Verificar'); ?></button>
 
     <div id="resultado"></div>
 
     <div style="text-align:center;margin-top:17px">
         <strong>
-            <?php echo call_user_func('miTranslate', 'Veja como você pode apoiar este software,'); ?> <a href="javascript:window.externo.rodar('https://mestredainfo.wordpress.com/assinantes/');"><?php echo call_user_func('miTranslate', 'clique aqui'); ?></a>
+            <?php echo miTranslate('Veja como você pode apoiar este software,'); ?> <a href="javascript:window.externo.rodar('https://www.mestredainfo.com.br/assinantes/');"><?php echo miTranslate('clique aqui'); ?></a>
         </strong>
     </div>
 
-    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/hash.js"></script>
 </body>

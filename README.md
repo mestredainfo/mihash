@@ -8,12 +8,12 @@ O MIHash é um software desenvolvido para assegurar a integridade de arquivos ba
 - Arquitetura: x64
 - MIApp 4 ou superior
 
-Para baixar e instalar o MIApp acesse o site oficial do [Mestre da Info](https://mestredainfo.wordpress.com/miapp/).
+Para baixar e instalar o MIApp acesse o site oficial do [Mestre da Info](https://www.mestredainfo.com.br/miapp/).
 
 ## Links
 
-- [Página do MIHash](https://mestredainfo.wordpress.com/mihash/)
-- [Apoie](https://mestredainfo.wordpress.com/assinantes/)
+- [Página do MIHash](https://www.mestredainfo.com.br/mihash/)
+- [Apoie](https://www.mestredainfo.com.br/assinantes/)
 
 ## Licença
 

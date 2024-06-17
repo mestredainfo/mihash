@@ -2,7 +2,7 @@
 	"app": {
 		"name": "MIHash",
 		"description": "Verifica e gera hash de arquivos no Linux e Windows.",
-		"version": "2.0.2",
+		"version": "2.0.3",
 		"categories": "Utility;",
 		"width": 800,
 		"height": 600,
@@ -15,13 +15,13 @@
 		"name": "Murilo Gomes Julio",
 		"email": "contatomestredainfo@gmail.com",
 		"organization": "Mestre da Info",
-		"contact": "https://mestredainfo.wordpress.com/contato/",
+		"contact": "https://www.mestredainfo.com.br/contato/",
 		"url": "https://linktr.ee/mestreinfo"
 	},
 	"copyright": "Copyright (C) 2004-2024 Murilo Gomes Julio",
-	"homepage": "https://mestredainfo.wordpress.com",
+	"homepage": "https://www.mestredainfo.com.br",
 	"bugs": {
-		"url": "https://mestredainfo.wordpress.com/bug-reporting/"
+		"url": "https://www.mestredainfo.com.br/bug-reporting/"
 	},
 	"license": "GPL-2.0-only",
 	"php": {
@@ -43,7 +43,7 @@
 		}
 	},
 	"update": {
-		"url": "https://mestredainfo.wordpress.com/mihash/"
+		"url": "https://www.mestredainfo.com.br/2024/06/mihash.html"
 	},
 	"dev": {
 		"menu": false,

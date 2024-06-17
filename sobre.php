@@ -4,9 +4,6 @@
 
 // Organização: Mestre da Info
 // Site: https://linktr.ee/mestreinfo
-
-header("Content-Security-Policy: default-src 'self'");
-header("Content-Security-Policy: script-src 'self' 'unsafe-inline' script.js");
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
