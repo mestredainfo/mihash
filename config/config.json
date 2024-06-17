@@ -15,13 +15,13 @@
 		"name": "Murilo Gomes Julio",
 		"email": "contatomestredainfo@gmail.com",
 		"organization": "Mestre da Info",
-		"contact": "https://www.mestredainfo.com.br/contato/",
+		"contact": "https://www.mestredainfo.com.br/p/contato.html",
 		"url": "https://linktr.ee/mestreinfo"
 	},
 	"copyright": "Copyright (C) 2004-2024 Murilo Gomes Julio",
 	"homepage": "https://www.mestredainfo.com.br",
 	"bugs": {
-		"url": "https://www.mestredainfo.com.br/bug-reporting/"
+		"url": "https://www.mestredainfo.com.br/p/bug-reporting.html"
 	},
 	"license": "GPL-2.0-only",
 	"php": {

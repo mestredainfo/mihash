@@ -47,7 +47,7 @@
 
     <div style="text-align:center;margin-top:17px">
         <strong>
-            <?php echo miTranslate('Veja como você pode apoiar este software,'); ?> <a href="javascript:window.externo.rodar('https://www.mestredainfo.com.br/assinantes/');"><?php echo miTranslate('clique aqui'); ?></a>
+            <?php echo miTranslate('Veja como você pode apoiar este software,'); ?> <a href="javascript:window.externo.rodar('https://www.mestredainfo.com.br/p/assinantes.html');"><?php echo miTranslate('clique aqui'); ?></a>
         </strong>
     </div>
 
