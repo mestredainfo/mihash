@@ -1,0 +1,20 @@
+{
+	"sistema": {
+		"nome": "MIHash",
+		"versao": "3.0.0",
+		"quadro": true,
+		"largura": 800,
+		"altura": 600,
+		"redimensionar": false,
+		"icon": "mihash.png",
+		"desativarAceleracaoHardware": true
+	},
+	"servidor": {
+		"perm": true,
+		"rotas": false
+	},
+	"dev": {
+		"menu": false,
+		"ferramentas": false
+	}
+}
